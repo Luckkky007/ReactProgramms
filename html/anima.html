@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            animation: anima 2s linear infinite alternate;
+            animation-play-state: paused;
+            /* animation-fill-mode: both; */
+            
+            /* transform: translate(200px,200px); */
+            /* transform: rotateX(100deg); */
+            /* transform: scale(3,2); */
+            /* transform: scale(3,5); */
+            /* transform: scaleX(5); */
+            /* transform: skew(0deg,30deg) */
+            /* transform: skewY(120deg);
+            transform: skewX(30deg) */
+            position: relative;
+            transition-property: background-color,width,height;
+            transition-duration: 3s;
+            /* transition-delay: 2s; */
+            transition-timing-function: ease-in-out;
+            
+        }
+        .main:hover{
+            background-color: brown;
+            width: 200px;
+            height: 400px;
+        }
+        @keyframes anima{
+            from{
+                top: 200px;
+                
+            }
+            to{
+                top: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>
